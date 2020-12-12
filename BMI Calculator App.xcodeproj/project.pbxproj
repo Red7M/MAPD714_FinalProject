@@ -15,6 +15,10 @@
 		9E3014B32584689C0014A7A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3014B12584689C0014A7A3 /* LaunchScreen.storyboard */; };
 		9E3014BE2584689C0014A7A3 /* BMI_Calculator_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3014BD2584689C0014A7A3 /* BMI_Calculator_AppTests.swift */; };
 		9E3014C92584689D0014A7A3 /* BMI_Calculator_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3014C82584689D0014A7A3 /* BMI_Calculator_AppUITests.swift */; };
+		9E3014DB2584733E0014A7A3 /* bmiDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E3014D92584733E0014A7A3 /* bmiDataModel.xcdatamodeld */; };
+		9E3014E325847A060014A7A3 /* BMITrackingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3014E225847A060014A7A3 /* BMITrackingTableViewController.swift */; };
+		9E3014E825847D350014A7A3 /* BMITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3014E725847D350014A7A3 /* BMITableCell.swift */; };
+		9E3014F025847FEB0014A7A3 /* bmi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3014EF25847FEB0014A7A3 /* bmi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		9E3014C42584689D0014A7A3 /* BMI Calculator AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BMI Calculator AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3014C82584689D0014A7A3 /* BMI_Calculator_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI_Calculator_AppUITests.swift; sourceTree = "<group>"; };
 		9E3014CA2584689D0014A7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E3014DA2584733E0014A7A3 /* bmiDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bmiDataModel.xcdatamodel; sourceTree = "<group>"; };
+		9E3014E225847A060014A7A3 /* BMITrackingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMITrackingTableViewController.swift; sourceTree = "<group>"; };
+		9E3014E725847D350014A7A3 /* BMITableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMITableCell.swift; sourceTree = "<group>"; };
+		9E3014EF25847FEB0014A7A3 /* bmi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bmi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,11 @@
 				9E3014AC2584689B0014A7A3 /* Main.storyboard */,
 				9E3014AF2584689C0014A7A3 /* Assets.xcassets */,
 				9E3014B12584689C0014A7A3 /* LaunchScreen.storyboard */,
+				9E3014D92584733E0014A7A3 /* bmiDataModel.xcdatamodeld */,
 				9E3014B42584689C0014A7A3 /* Info.plist */,
+				9E3014E225847A060014A7A3 /* BMITrackingTableViewController.swift */,
+				9E3014E725847D350014A7A3 /* BMITableCell.swift */,
+				9E3014EF25847FEB0014A7A3 /* bmi.swift */,
 			);
 			path = "BMI Calculator App";
 			sourceTree = "<group>";
@@ -258,9 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E3014DB2584733E0014A7A3 /* bmiDataModel.xcdatamodeld in Sources */,
+				9E3014E325847A060014A7A3 /* BMITrackingTableViewController.swift in Sources */,
 				9E3014AB2584689A0014A7A3 /* ViewController.swift in Sources */,
+				9E3014E825847D350014A7A3 /* BMITableCell.swift in Sources */,
 				9E3014A72584689A0014A7A3 /* AppDelegate.swift in Sources */,
 				9E3014A92584689A0014A7A3 /* SceneDelegate.swift in Sources */,
+				9E3014F025847FEB0014A7A3 /* bmi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +603,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9E3014D92584733E0014A7A3 /* bmiDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9E3014DA2584733E0014A7A3 /* bmiDataModel.xcdatamodel */,
+			);
+			currentVersion = 9E3014DA2584733E0014A7A3 /* bmiDataModel.xcdatamodel */;
+			path = bmiDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9E30149B2584689A0014A7A3 /* Project object */;
 }
